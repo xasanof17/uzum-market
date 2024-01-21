@@ -1,7 +1,8 @@
 import Link from "next/link";
 import { IconType } from "react-icons";
-import { FaRegUser, FaRegHeart } from "react-icons/fa6";
-import { LuShoppingBag } from "react-icons/lu";
+import { IoMdHeartEmpty } from "react-icons/io";
+import { BiUser } from "react-icons/bi";
+import { BsBag } from "react-icons/bs";
 
 type ActionButton = {
   href?: string;
@@ -12,7 +13,7 @@ type ActionButton = {
 const ActionButton = ({ href, title, Icon }: ActionButton) => {
   const variants = {
     base: "flex items-center space-x-2 px-3 py-2.5 hover:bg-slate-200/50 transition-all duration-300 rounded-sm",
-    icon: "text-[18px] text-noble",
+    icon: "text-[20px] text-noble",
     title: "text-sm font-medium text-noble",
   };
   if (href) {
@@ -32,10 +33,10 @@ const ActionButton = ({ href, title, Icon }: ActionButton) => {
 
 const Actions = () => {
   return (
-    <div className="flex items-center space-x-2">
-      <ActionButton Icon={FaRegUser} title="Kirish" />
-      <ActionButton Icon={FaRegHeart} title="Saralangan" />
-      <ActionButton Icon={LuShoppingBag} title="Savat" />
+    <div className="hidden items-center space-x-2 lg:flex">
+      <ActionButton Icon={BiUser} title="Kirish" />
+      <ActionButton Icon={IoMdHeartEmpty} title="Saralangan" />
+      <ActionButton Icon={BsBag} title="Savat" />
     </div>
   );
 };

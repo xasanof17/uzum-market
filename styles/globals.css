@@ -71,7 +71,7 @@
     @apply border-border;
   }
   body {
-    @apply bg-background text-foreground scrollbar-thin scrollbar-track-gray-100 scrollbar-thumb-gray-900;
+    @apply scrollbar-thin scrollbar-track-gray-100 scrollbar-thumb-violet-600;
   }
 }
 

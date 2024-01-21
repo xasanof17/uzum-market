@@ -1,7 +1,4 @@
 import { Banner, Navigation } from "@/components/header";
-import NavLink from "@/components/ui/link";
-import { links } from "@/data";
-import Link from "next/link";
 
 const Navbar = () => {
   return (

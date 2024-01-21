@@ -5,6 +5,7 @@ import { fontSans } from "@/utils/fonts";
 import { BASE_URL } from "@/constants";
 import { abstract } from "@/meta";
 import { cn } from "@/lib/utils";
+import Tabs from "@/components/tabs/Tabs";
 
 type RootLayoutProps = {
   children: React.ReactNode;
@@ -40,11 +41,11 @@ export async function generateMetadata(): Promise<Metadata> {
     referrer: "origin",
     icons: {
       icon: `/icon.svg`,
-      shortcut: `/icon.svg`,
-      apple: `/icon.svg`,
+      shortcut: `/shortcut.svg`,
+      apple: `/apple-icon.svg`,
     },
     alternates: {
-      canonical: "/",
+      canonical: BASE_URL,
     },
     formatDetection: {
       email: false,
@@ -78,15 +79,15 @@ export async function generateMetadata(): Promise<Metadata> {
       url: `${BASE_URL}`,
       images: [
         {
-          url: `/assets/opengraph-image.jpg`,
-          width: 1920,
-          height: 600,
-          type: "image/jpg",
+          url: `/assets/shortcut.svg`,
+          width: 50,
+          height: 50,
+          type: "image/svg",
         },
       ],
-      locale: "en",
+      locale: "uz",
     },
-    category: "Education",
+    category: "Shopping",
   };
 }
 export default function RootLayout({ children }: RootLayoutProps) {
@@ -96,6 +97,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
       <body className={cn("font-sans antialiased", fontSans.variable)}>
         <Navbar />
         <main role="main">{children}</main>
+        <Tabs />
         <Footer />
       </body>
     </html>

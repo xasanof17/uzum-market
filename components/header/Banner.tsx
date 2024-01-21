@@ -3,7 +3,7 @@ import { MdLocationOn } from "react-icons/md";
 
 const Banner = () => {
   return (
-    <section className="bg-slate-100 py-1">
+    <section className="hidden bg-slate-100 py-1 xl:block">
       <div className="container flex flex-row items-center justify-between">
         <div className="flex items-center space-x-6">
           <div className="flex items-center space-x-1">
