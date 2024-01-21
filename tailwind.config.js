@@ -12,6 +12,9 @@ module.exports = {
   prefix: "",
   theme: {
     extend: {
+      screens: {
+        xm: "375px"
+      },
       fontFamily: {
         sans: ["var(--font-sans)", ...fontFamily.sans],
       },
