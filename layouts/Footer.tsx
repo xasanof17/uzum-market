@@ -70,7 +70,7 @@ const Footer = () => {
     link: "text-sm font-normal text-noble/90 hover:text-violet-600 duration-300 transition-colors",
   };
   return (
-    <footer className="mt-5 border-t-2 pt-5">
+    <footer className="mt-5 border-t-2 pb-[10%] pt-5 lg:pb-2">
       <div className="container grid grid-cols-1 gap-5 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
         {links.map(({ title, list }, i) => (
           <div key={i} className="flex flex-col">

@@ -3,7 +3,7 @@ import { Category } from "@/components/category";
 
 const Navbar = () => {
   return (
-    <header className="sticky left-0 top-0 flex w-full flex-col">
+    <header className="flex w-full flex-col bg-white">
       <Banner />
       <Navigation />
       <Category />

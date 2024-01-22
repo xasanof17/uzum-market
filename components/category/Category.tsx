@@ -37,7 +37,7 @@ const Category = () => {
         className="flex items-center justify-between space-x-5 overflow-x-auto pb-2 pr-3 transition-all duration-300 scrollbar-none lg:space-x-7"
       >
         <li>
-          <Link href={"/"} className="flex items-center space-x-2 text-nowrap">
+          <Link href={"/"} className="flex items-center space-x-2">
             <div className="relative h-6 w-6">
               <Image
                 src={"/assets/union-icon.svg"}
@@ -46,7 +46,7 @@ const Category = () => {
                 sizes="100vw"
               />
             </div>
-            <span className="text-sm font-semibold">
+            <span className="text-nowrap text-sm font-semibold">
               Muddatli to{"\u2019"}lov
             </span>
           </Link>
