@@ -40,7 +40,7 @@ const Category = () => {
           <Link href={"/"} className="flex items-center space-x-2">
             <div className="relative h-6 w-6">
               <Image
-                src={"/assets/union-icon.svg"}
+                src={"/assets/icons/union-icon.svg"}
                 alt="icon"
                 fill
                 sizes="100vw"

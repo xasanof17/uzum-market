@@ -8,12 +8,17 @@ import { TbShoppingBagPlus } from "react-icons/tb";
 
 const ProductCard = () => {
   const [liked, setLiked] = useState(false);
-  const sum = "so\u2019m";
+
   return (
-    <div className="flex flex-col overflow-hidden rounded-sm transition-all duration-300 hover:shadow-md">
-      <Link href={"/"} className="relative w-full bg-slate-100">
+    <div className="flex flex-col rounded-sm transition-all duration-300 hover:shadow-md">
+      <Link href={"/"} className="relative w-full overflow-hidden bg-slate-100">
         <div className="relative h-[250px] w-full rounded-sm transition-all duration-300 hover:scale-105 md:h-[300px]">
-          <Image src={"/assets/product.png"} fill alt="product title " />
+          <Image
+            src={"/assets/product.png"}
+            fill
+            alt="product title"
+            sizes="100vw"
+          />
         </div>
         <div className="absolute right-2 top-2">
           <button onClick={() => setLiked((prev) => !prev)} type="button">
@@ -46,10 +51,10 @@ const ProductCard = () => {
         <div className="mt-4 flex items-center justify-between">
           <div className="flex flex-col">
             <span className="text-[11px] font-normal text-slate-400 line-through md:text-[13px]">
-              15000 {sum}
+              15000 so&apos;m
             </span>
             <span className="text-[12px] font-medium text-noble md:text-sm">
-              13 000 {sum}
+              13 000 so&apos;m
             </span>
           </div>
           <button

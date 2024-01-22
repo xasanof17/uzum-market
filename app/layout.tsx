@@ -79,7 +79,7 @@ export async function generateMetadata(): Promise<Metadata> {
       url: `${BASE_URL}`,
       images: [
         {
-          url: `/assets/shortcut.svg`,
+          url: `/assets/icons/shortcut.svg`,
           width: 50,
           height: 50,
           type: "image/svg",

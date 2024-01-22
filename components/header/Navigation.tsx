@@ -27,7 +27,7 @@ const Navigation = () => {
           >
             <div className="relative h-6 w-6">
               <Image
-                src={"/assets/catalog-icon.svg"}
+                src={"/assets/icons/catalog-icon.svg"}
                 alt="catalog"
                 fill
                 sizes="100vw"
