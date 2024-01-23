@@ -79,7 +79,7 @@ export async function generateMetadata(): Promise<Metadata> {
       url: `${BASE_URL}`,
       images: [
         {
-          url: `/opengraph-image.jpg`,
+          url: `/assets/opengraph-image.jpg`,
           width: 1920,
           height: 800,
           type: "image/jpg",
