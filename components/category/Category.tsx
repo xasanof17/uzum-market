@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { IoChevronDown } from "react-icons/io5";
+import { Menu } from "../menu";
 
 const categories = [
   {
@@ -58,10 +59,12 @@ const Category = () => {
             </Link>
           </li>
         ))}
-        <li className="flex items-center space-x-1 hover:cursor-pointer">
-          <span className="text-sm font-normal text-noble/60">Yana</span>
-          <IoChevronDown className="text-[16px] text-noble/60" />
-        </li>
+        <Menu>
+          <p className="flex items-center space-x-1 hover:cursor-pointer">
+            <span className="text-sm font-normal text-noble/60">Yana</span>
+            <IoChevronDown className="text-[16px] text-noble/60" />
+          </p>
+        </Menu>
       </ul>
     </div>
   );
