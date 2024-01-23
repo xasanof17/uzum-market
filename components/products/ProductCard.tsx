@@ -10,9 +10,9 @@ const ProductCard = () => {
   const [liked, setLiked] = useState(false);
 
   return (
-    <div className="flex flex-col rounded-sm transition-all duration-300 hover:shadow-md">
+    <div className="flex flex-col rounded-sm transition-all duration-300 hover:cursor-pointer hover:shadow-md">
       <Link href={"/"} className="relative w-full overflow-hidden bg-slate-100">
-        <div className="relative h-[250px] w-full rounded-sm transition-all duration-300 hover:scale-105 md:h-[300px]">
+        <div className="relative h-[400px] w-full rounded-sm transition-all duration-300 hover:scale-105 xm:h-[250px] md:h-[300px]">
           <Image
             src={"/assets/product.png"}
             fill
@@ -36,9 +36,12 @@ const ProductCard = () => {
         </div>
       </Link>
       <div className="flex flex-col px-2 py-3">
-        <h3 className="text-[12px] font-normal text-noble md:text-sm">
-          Kungaboqar yog&apos;i Oila tanlovi, tozalangan va xidsizlantirilgan, 9
-        </h3>
+        <Link href={"/"}>
+          <h3 className="text-[12px] font-normal text-noble md:text-sm">
+            Kungaboqar yog&apos;i Oila tanlovi, tozalangan va xidsizlantirilgan,
+            9
+          </h3>
+        </Link>
         <div className="mt-1 flex items-center space-x-2 text-[11px] font-light text-slate-500 md:text-[13px]">
           <BsStarFill className="h-4 w-4 text-yellow-500" />
           <span>4.9 (4092 sharx)</span>

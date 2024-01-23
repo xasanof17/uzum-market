@@ -93,8 +93,9 @@ const Footer = () => {
     title: "text-sm lg:text-base font-medium text-noble",
     link: "text-[13px] md:text-sm font-normal text-noble/90 hover:text-violet-600 duration-300 transition-colors",
   };
+  const year = new Date().getFullYear();
   return (
-    <footer className="mt-5 border-t-2 pb-[40px] pt-5 xm:pb-[65px] lg:pb-0">
+    <footer className="mt-5 border-t-2 pb-[40px] pt-5 xm:pb-[65px] md:pb-0">
       <div className="container grid grid-cols-1 gap-5 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
         {links.map(({ title, list }, i) => (
           <div key={i} className="flex flex-col">
@@ -120,7 +121,7 @@ const Footer = () => {
                       <div className="relative h-6 w-6">
                         <Image src={icon} alt={title} fill sizes="100vw" />
                       </div>
-                      <span className="text-sm font-medium text-noble transition-all duration-300 group-hover:text-violet-600">
+                      <span className="text-sm font-medium text-noble transition-all duration-300 group-hover:text-violet-600 md:text-[12px] lg:text-sm">
                         {title}
                       </span>
                     </Link>
@@ -168,8 +169,7 @@ const Footer = () => {
           target="blank"
           className={`${variants.title} hover:text-violet-600`}
         >
-          {" "}
-          &copy; Millenium 2023
+          &copy; Millenium {year}
         </Link>
       </div>
     </footer>

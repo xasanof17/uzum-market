@@ -79,10 +79,10 @@ export async function generateMetadata(): Promise<Metadata> {
       url: `${BASE_URL}`,
       images: [
         {
-          url: `/assets/icons/shortcut.svg`,
-          width: 50,
-          height: 50,
-          type: "image/svg",
+          url: `/assets/opengraph-image.jpg`,
+          width: 1920,
+          height: 800,
+          type: "image/jpg",
         },
       ],
       locale: "uz",

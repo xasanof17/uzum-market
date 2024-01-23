@@ -13,8 +13,8 @@ type ActionButton = {
 const ActionButton = ({ href, title, Icon }: ActionButton) => {
   const variants = {
     base: "flex items-center space-x-2 px-3 py-2.5 hover:bg-slate-200/50 transition-all duration-300 rounded-sm",
-    icon: "text-[20px] text-noble",
-    title: "text-sm font-medium text-noble",
+    icon: "text-[22px] lg:text-[20px] text-noble",
+    title: "hidden lg:inline text-sm font-medium text-noble",
   };
   if (href) {
     <Link href={"#!"} className={variants.base}>
@@ -33,7 +33,7 @@ const ActionButton = ({ href, title, Icon }: ActionButton) => {
 
 const Actions = () => {
   return (
-    <div className="hidden items-center space-x-2 lg:flex">
+    <div className="hidden items-center md:flex lg:space-x-2">
       <ActionButton Icon={BiUser} title="Kirish" />
       <ActionButton Icon={IoMdHeartEmpty} title="Saralangan" />
       <ActionButton Icon={BsBag} title="Savat" />
