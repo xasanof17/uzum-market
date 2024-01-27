@@ -35,7 +35,7 @@ const Category = () => {
     <div className="container">
       <ul
         role="list"
-        className="flex items-center justify-between space-x-5 overflow-x-auto !text-nowrap pb-2 pr-3 transition-all duration-300 scrollbar-none lg:space-x-7"
+        className="flex items-center justify-between space-x-5 overflow-x-auto !text-nowrap pb-2 pr-3 transition-all duration-300 scrollbar-none xl:space-x-7"
       >
         <li>
           <Link href={"/"} className="flex items-center space-x-2">

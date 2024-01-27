@@ -11,7 +11,7 @@ import Image from "next/image";
 
 const CarouselBlock = () => {
   return (
-    <section id="carousel" className="container">
+    <section id="carousel" className="container mt-3">
       <Carousel
         opts={{
           loop: true,
@@ -21,23 +21,23 @@ const CarouselBlock = () => {
             delay: 5000,
           }),
         ]}
-        className="h-[420px] w-full max-w-full"
+        className="h-[280px] w-full max-w-full md:h-[330px] lg:h-[380px] xl:h-[420px]"
       >
         <CarouselContent>
           {Array.from({ length: 5 }).map((_, index) => (
             <CarouselItem key={index}>
-              <div className="relative h-[450px] w-full">
-              {/* <Image
-                src={"/assets/opengraph-image.jpg"}
-                alt="carousel image"
-                className="rounded-lg"
-                fill
-              /> */}
-              <img src="/assets/opengraph-image.jpg" alt="title" className="w-full h-full object-center"/>
+              <div className="relative h-[280px] w-full md:h-[330px] lg:h-[380px] xl:h-[420px]">
+                <Image
+                  src={"/assets/carousel/shaxzoda.png"}
+                  alt="carousel image"
+                  className="rounded-lg"
+                  fill
+                />
               </div>
             </CarouselItem>
           ))}
         </CarouselContent>
+        salom bolalar
         <CarouselPrevious />
         <CarouselNext />
       </Carousel>
